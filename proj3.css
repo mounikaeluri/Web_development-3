@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+html,body { 
+	height: 96%;
+	min-width: 900px;
+	background-color: #CCDDCC;
+    }
+#Top{
+text-align: center;
+margin:auto;
+}
+
+h1,h2{ 
+	border: 5px solid black;
+    text-align: center;
+	background-color:orange;
+	padding:15px;
+    }
+h2{
+	background-color:green;
+	border-radius: 25px;
+	}
+#name{
+    display: block;
+    height: 50%;
+    margin: auto;
+}
+#information{
+background-image: url("home.jpg");
+color:#FAFFFA;
+}	
+#basketball{
+background-image: url("basketball.jpg");
+color: #F0F0A0;	
+}  
+#baseball{
+background-image: url("baseball.jpg");
+color:#FAFFFA;
+}  
+#physical{
+background-image: url("physical.jpg");
+color:#FF0000;
+}
+#swimming{
+background-image: url("swimming.jpg");
+color:#FAFFFA;
+}
+#nature{
+background-image: url("natural.jpg");
+color: #F0F000;
+}
+#bandcamp{
+background-image: url("bandcamp.jpg");
+	color:#FAFFFA;
+}
+#menu ul {
+    text-align: center;
+    margin-bottom: 25px;
+    }   
+#menu li {
+    display: inline;
+    margin-left: -4px; 
+    background-color: #67463B;   
+    }
+#menu a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border: 2px solid #67473B;
+    color:  #FFF0DA;
+    background-color: #67473B;
+    }                 
+#menu a:hover {
+    color:  #67473B;
+    background-color: #FFF0DA;
+}
+#menu a:active {
+    color: #A7A68C;
+} 
+p {
+    padding:10px 15px 10px 15px;
+} 
+#information,#basketball,#baseball,#nature,#swimming,#physical,#bandcamp{
+	background-size:/*1200px 550px,*/cover;
+    min-height: 100%;
+    margin: 1% 5% 1% 5%;
+    border-radius: 25px;
+    border: 5px solid #67463B;
+    position: relative;
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+}  
+
+form {
+    padding: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;    
+    }  
+fieldset {
+    width: 650px;
+    display: block;
+    margin: 10px auto 10px auto;
+	padding-top: 12px; 
+    border: 1px solid #777777;
+    }      
+legend {
+	padding: 2px 10px 2px 10px;
+    font-size: smaller;
+    font-weight: bold;
+	border: 1px dotted gray;
+    font-style: oblique;
+    font-family: arial, helvetica;
+	margin:auto
+	
+    }    
+
+ul {
+    list-style-type: none;
+    }
+    
+li {
+    margin-bottom: 5px;
+    }    
+
+label {
+    background-color: #EEE;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+    
+input {
+    font-family: courier;
+    border: 1px solid #DDD;
+    }
+    
+.button {
+    font-family: sans-serif;
+    }        
+    
+.error {
+    border:  1px solid red;   
+    background-color: #FEE;  
+    }
+    
+#button_panel {
+    text-align: center;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    }  
+    
+#message_line {
+    height: 50px;
+    color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }     
+table {
+    width: 400px;
+    margin: auto;
+    margin-collapse: collapse;
+    margin-bottom: 20px;
+    }
+    
+td  {
+    border: 1px solid black;
+    padding: 5px;
+    }      
+.center{
+ text-align: center;   
+    margin-bottom: 20px;
+}
+ 

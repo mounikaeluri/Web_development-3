@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html>
+<!-- 
+Mounika Eluri
+CS545
+Fall 2015
+Project #3
+Account Number:jadrn062
+--->
+<head>
+	<meta http-equiv="Content-Type" content="text/html;
+    charset= utf-8"/>
+    <title>Enrolment form</title>
+      <link rel="stylesheet" type="text/css" href="proj3.css" >
+        <script type="text/javascript" src="http://jadran.sdsu.edu/jquery/jquery.js"></script>        
+       <script type="text/javascript" src="ajax.js"></script>
+		<script type="text/javascript" src="proj3.js"></script>    
+</head>
+<body>
+    <div>
+        <h1>Happy Days Summer Camp Enrolment Form<a id="form" href="index.html"><img id="name" src="button1.png" alt="Picture For Enroll Link" /></a></h1>
+		<fieldset><legend>Enrolment Information</legend>
+			   <form name="child_info"	
+	      method="POST"
+	      enctype="multipart/form-data"
+	      action="process_request.php"
+	      id ="signUpForm">
+			
+			<legend>Child Information</legend>
+			<ul>
+				<li><label for="fname">First Name</label>
+					<input type="text" name="fname" size="25" /></li>    
+				<li><label for="mname">Middle Name</label>
+					<input type="text" name="mname" size="25" /></li>			
+				<li><label for="lname">Last Name</label>
+					<input type="text" name="lname" size="25" /></li> 
+				<li><label>Nick Name</label>
+					<input type="text" name="generalname" size="50" /></li>
+				<li><label for="pic">Photo</label>
+					<input type="file" name="pic" accept="image/*" /></li>					     
+				<li><label for="gender">Gender</label>
+			     		<input type ="radio" name="gender" id="male"value="m"/>Male
+			     		<input type ="radio" name="gender" id="female"value="f"/>Female</li>
+				<li><label>Date of Birth</label> 
+					<input type="text" name="date_of_birth" size="20" maxlength="15" placeholder="mm/dd/yyyy" /></li> 
+				<li><label>Any Medical Condition</label><br />
+				<TEXTAREA name= "medical" rows="4" cols="50"></TEXTAREA></li>
+				<li><label>Special Dietary Requirements</label><br />
+				<TEXTAREA name= "dietary" rows="4" cols="50"></TEXTAREA></li>
+				<li><label>Emergency Contact</label><br>
+					<label>Name</label>
+					<input type="text" name="emergency_name" size="25" /><br>
+					<label>Phone</label>
+					(<input type="text" name="emergency_area_phone" size="4" maxlength="3"/>)
+					<input type="text" name="emergency_prefix_phone" size="4" maxlength="3"/>
+					<input type="text" name="emergency_phone" size="5" maxlength="4"/> </li> 
+				</ul>
+       <hr>
+			<legend>Parent Information</legend>
+			<ul>
+				<li><label>First Name</label>
+					<input type="text" name="parent_fname" size="25" /></li>    
+				<li><label>Middle Name</label>
+					<input type="text" name="parent_mname" size="25" /></li>			
+				<li><label>Last Name</label>
+					<input type="text" name="parent_lname" size="25" /></li> </ul>
+			<ul>
+				<li><label>Relation to child</label>
+		     		<input type ="radio" name="relation" id="ch1" value="father"/>Father
+		     		<input type ="radio" name="relation" id="ch2"  value="Mother"/>Mother
+		     		<input type ="radio" name="relation" id="ch3" value="Guardian"/>Guardian
+		     		
+		     	</li></ul>
+			<ul>
+				<li><label>Address Line1</label>
+					<input type="text" name="address_line1" size="55" /><br />
+					<label>Address Line2</label>
+					<input type="text" name="address_line2" size="55" /><br />				
+					<label>City</label>
+					<input type="text" name="city" size="25" /> 
+					<label>State</label>
+					 <input type="text" name="state" size="3" maxlength="2" />
+
+					<label>Zip</label>
+					<input type="text" name="zip" size="10" maxlength="10" /></li>      
+				<li><label>Home Phone</label>
+					(<input type="text" name="home_area_phone" size="4" maxlength="3"/>)
+					<input type="text" name="home_prefix_phone" size="4" maxlength="3"/>
+					<input type="text" name="home_phone" size="5" maxlength="4"/></li> 
+				<li><label>Cell Phone</label>
+					(<input type="text" name="cell_area_phone" size="4" maxlength="3"/>)
+					<input type="text" name="cell_prefix_phone" size="4" maxlength="3"/>
+					<input type="text" name="cell_phone" size="5" maxlength="4"/></li>
+				<li><label>Email address:</label>
+                		<input type="text" name="email" size="25"  /></li>
+			</ul>
+			<hr>
+			<legend>Select Atleast One Program</legend>
+	    		<input type="checkbox" name="program[]" id="ch_basket" value="1"/>Basketball Camp<br />
+	    		<input type ="checkbox" name="program[]"  id="ch_base"value="2"/> Baseball Camp <br />
+	    		<input type ="checkbox" name="program[]" id="ch_physical" value="3"/>Physical Training<br />
+	    		<input type ="checkbox" name="program[]" id="ch_band" value="4"/>Band Camp<br />
+	    		<input type ="checkbox" name="program[]" id="ch_swimming" value="5"/>Swimming<br />
+	    		<input type ="checkbox" name="program[]" id="ch_nature"value="6"/>Nature Discovery
+			
+		<div id="message_line"></div>
+		 <h3 id="status"></h3>
+        <div id="button_panel">  
+            <input type="reset" value="Clear Data" class="button" />
+            <input type="button" value="Submit Data"  id="ck_button" /> 
+        
+		</div> 		
+        </form>
+        </fieldset>  
+    </div> 
+	<!-- <script type="text/javascript">init_vars(); 
+    </script>
+	--->
+</body>
+</html>
